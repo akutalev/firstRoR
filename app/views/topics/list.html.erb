@@ -1,0 +1,11 @@
+<h1> List of Tpoics</h1>
+<ul>
+    <%- @topics.each do |topic| %>
+        <li>
+          <%= topic.text %><br>
+        </li>
+    <% end %>
+    <li>
+        <input type="button" value="Create new topic" class="js-create-new">
+    </li>
+</ul>

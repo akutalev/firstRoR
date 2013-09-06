@@ -1,0 +1,10 @@
+<%= form_for :topic, :url => {:action => :create} do |f| %>
+    <p>
+      <%= f.label "Name of topic" %><br>
+      <%= f.text_field :text %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
