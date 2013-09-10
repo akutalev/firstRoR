@@ -3,7 +3,7 @@
   <component name="DataSourceManagerImpl" format="xml" hash="641128882">
     <data-source source="LOCAL" name="Rails forum: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1f90d4d5-512c-45f7-8bb3-6f5ed8c8b0ac">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/forum</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/db/development.sqlite3</jdbc-url>
       <user-name>root</user-name>
       <user-password>dfc7dfd3dfd9dfdbdfc6</user-password>
       <libraries>

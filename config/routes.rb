@@ -3,6 +3,8 @@ Forum::Application.routes.draw do
   get "topics/new"
   post "topics/create"
 
+  resources :topics, only: [:edit, :update, :destroy]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

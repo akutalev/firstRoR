@@ -4,16 +4,29 @@ class TopicsController < ApplicationController
   end
 
   def new
-    respond_to do |format|
-        format.js {render new}
-    end
+    render "new", layout: false
   end
 
   def create
     @topic = Topic.new(params[:topic])
-    @topic.created_at = Time.current
-    @topic.updated_at = Time.current
     @topic.save
-    redirect_to :action => :list, :id => @topic.id
+    redirect_to root_path
+  end
+
+  def edit
+    @topic = Topic.find(params[:id])
+    render "edit", layout: false
+  end
+
+  def update
+    @topic = Topic.find(params[:id])
+    @topic.update_attributes(params[:topic])
+    redirect_to root_path
+  end
+
+  def destroy
+    @topic = Topic.find(params[:id])
+    @topic.destroy
+    redirect_to root_path
   end
 end

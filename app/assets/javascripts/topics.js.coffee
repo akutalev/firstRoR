@@ -1,23 +1,45 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $ ->
-  form = ->
-    $.ajax(url: "/topics/new", method: "GET").done (data) ->
-      $.dialog
-        maxWidth  : 800,
-        maxHeight : 600,
-        fitToView : false,
-        width : '70%',
-        height : '70%',
-        autoSize : false,
-        closeClick : false,
-        openEffect : 'none',
-        closeEffect : 'none',
-        html : data
+  create_topic = ->
+    $.ajax
+      url: '/topics/new',
+      type: "GET",
+      dataType: 'html',
+      success: (data) ->
+        $(data).modal()
+      error: (a, b, errorMessage) ->
+        alert(errorMessage);
+    return false
 
-  $('.js-create-new').click ->
-    form()
+  edit_topic = (id) ->
+    $.ajax
+      url: '/topics/' + id + '/edit',
+      type: 'GET',
+      dataType: 'html',
+      success: (data) ->
+        $(data).modal()
+      error: (a, b, errorMessage) ->
+        alert(errorMessage);
+    return false
+
+  $('.js-create-new').on click: ->
+    create_topic()
+
+  $(document).on('click', '.js-edit-topic', () ->
+    edit_topic($(this).attr('id'))
+  )
+
+  $(document).on('click', '.js-delete-topic',() ->
+    id = $(this).attr('id')
+    message = 'Are you sure?'
+    if (confirm(message))
+      $.ajax
+        url: '/topics/' + id,
+        type: 'DELETE',
+        success: (data) ->
+          $(document).find('.js-list-topic').replaceWith($(data).find('.js-list-topic'))
+    else
+      return false;
+  )
 
 
 
