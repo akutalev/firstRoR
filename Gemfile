@@ -9,8 +9,6 @@ gem 'mysql2'
 gem 'sqlite3'
 gem 'therubyracer'
 gem 'less-rails'
-gem "dynamic_form"
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,7 +25,6 @@ end
 gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
 gem 'requirejs-rails'
-gem 'backbone-on-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

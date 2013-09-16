@@ -1,12 +1,16 @@
-#define ['jquery'], ($) ->
-#$ ->
-#alert "The app has started with requirejs. yay!!"
+define [], () ->
+  require.config
+    paths:        
+      backbone:  "lib/backbone"
+      underscore: "lib/underscore"
+      jquery: "lib/jquery"
+      router: "backbone/routers/router"
+    shim:
+      'underscore':
+        exports : '_'
+      'backbone': 
+         deps: ["underscore", "jquery"],
+         exports: "Backbone"
 
-require.config ->
-  baseUrl: '/javascript',
-  paths:
-    'topic': '/backbone/models/topic.coffee',
-    'topics': '/backbone/collections/topics.cofee'
-
-  shim:
-    backbone: 'lib/backbone.js'
+  require ["jquery", "backbone", "router"], ($, Backbone, Router) ->
+    Router.initialize()
