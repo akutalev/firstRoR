@@ -1,21 +1,18 @@
-define(
-  [
+define [
     'jquery',
     'underscore',
     'backbone',
-    'models/topics',
+    'collections/topics',
     'text!templates/topics.html',
     'views/topic',
     'models/topic',
-    'text!templates/title\.html'
   ],
-  ($, _, Backbone, TopicsCollection, topicsListTemplate, TopicView, TopicModel, titleTemplate) ->
-    Backbone.View.extend(
+  ($, _, Backbone, TopicsCollection, topicsListTemplate, TopicView, TopicModel) ->
+    Backbone.View.extend
       el: $("#topics")
-      titleTemplate: _.template(titleTemplate, title: 'All Topics')
       template: _.template(topicsListTemplate)
-      events:
-        'click .create-topic': 'createTopic'
+#      events:
+#        'click .create-topic': 'createTopic'
       model: TopicModel
       initialize: ->
         @$el.html(@template)
@@ -23,18 +20,14 @@ define(
         @listenTo(@collection, 'add', @addOne);
         @collection.fetch()
 
-      render: -> $('header').html(@titleTemplate)
+      render: -> $('#topics').html(topicsListTemplate)
 
       addOne: (topic) ->
         view = new TopicView({model: topic})
         @$el.find('tbody').append(view.render().el)
 
-      createTopic: ->
-        topic = new TopicModel()
-        topic.save(
-          { title: $("#new-topic-title").val() },
-          { success: (topic) => @collection.add(topic)   }
-        )
-
-    )
-)
+#      createTopic: ->
+#        topic = new TopicModel()
+#        topic.save
+#          title: $("#new-topic-title").val(),
+#          success: (topic) => @collection.add(topic)

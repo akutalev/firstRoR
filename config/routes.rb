@@ -1,9 +1,11 @@
 Forum::Application.routes.draw do
-  get "topics/list"
-  get "topics/new"
-  post "topics/create"
+  #get "topics/list"
+  #get "topics/new"
+  #post "topics/create"
 
-  resources :topics, only: [:edit, :update, :destroy]
+  resources :topics
+
+  root :to => 'topics#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -54,7 +56,6 @@ Forum::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'topics#list'
 
   # See how all your routes lay out with "rake routes"
 

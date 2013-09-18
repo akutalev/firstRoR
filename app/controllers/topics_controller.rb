@@ -1,10 +1,12 @@
 class TopicsController < ApplicationController
-  def list
+  respond_to :json
+
+  def index
     @topics = Topic.all
   end
 
   def new
-    render "new", layout: false
+    #render "new", layout: false
   end
 
   def create
@@ -13,9 +15,13 @@ class TopicsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @topic = Topic.find(params[:id])
+  end
+
   def edit
     @topic = Topic.find(params[:id])
-    render "edit", layout: false
+    #render "edit", layout: false
   end
 
   def update
