@@ -10,6 +10,7 @@ define [], () ->
       models: "backbone/models"
       views: "backbone/views"
       collections: "backbone/collections"
+      bootstrap: "lib/bootstrap.min"
     shim:
       'jquery':
          exports: '$'
@@ -18,6 +19,9 @@ define [], () ->
       'backbone': 
          deps: ["underscore", "jquery"],
          exports: "Backbone"
+      'bootstrap':
+        deps: ["jquery"],
+        exports: '$.fn.popover'
 
   require ["jquery", "backbone", "router", "underscore"], ($, Backbone, Router, _) ->
     Router.initialize()

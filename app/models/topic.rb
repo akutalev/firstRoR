@@ -1,4 +1,4 @@
 class Topic < ActiveRecord::Base
-  attr_accessible :created_at, :text, :updated_at
+  attr_accessible :text, :created_at, :updated_at
 
 end

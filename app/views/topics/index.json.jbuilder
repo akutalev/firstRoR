@@ -1,1 +1,1 @@
-json.array! @topics, :id, :text
+json.array! @topics, :id, :text, :created_at, :updated_at

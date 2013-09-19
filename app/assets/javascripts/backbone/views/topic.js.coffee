@@ -1,28 +1,24 @@
-define ['jquery', 'underscore', 'backbone', 'text!templates/topic.html'],
-  ($, _, Backbone, topicTemplate) ->
+define ['jquery', 'bootstrap','underscore', 'backbone', 'text!templates/topic.html', 'views/editTopic'],
+  ($, Bootstrap, _, Backbone, topicTemplate, EditTopicView) ->
     Backbone.View.extend
       tagName: 'tr'
       template: _.template(topicTemplate)
       events:
-        'click .remove-topic': 'clear'
-        'click .edit-topic': 'edit'
-        'keypress .edit': 'updateOnEnter'
-        'blur .edit': 'update'
+        'click .js-remove-topic': 'clear'
+        'click .js-edit-topic': 'edit'
 
       initialize: ->
         @listenTo(@model, 'change', @render)
         @listenTo(@model, 'destroy', @remove)
 
       render: ->
+        if @view?
+          @view.remove
         @$el.html(@template(@model.toJSON()))
-        @input = @$('.edit');
+        @
 
       clear: -> @model.destroy()
 
       edit: ->
-
-      update: ->
-        @model.save({title: @input.val()})
-        @$el.removeClass("editing")
-
-      updateOnEnter: (e) -> @update() if e.keyCode == 13
+        @view = new EditTopicView(model: @model)
+        @view.render()

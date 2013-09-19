@@ -11,12 +11,12 @@
     <file path="/database.yml" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1378448805560" ignored="false" />
     <file path="/topic.rb" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1378881996574" ignored="false" />
     <file path="/list.html.erb" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1378882891087" ignored="false" />
-    <file path="/topics.js.coffee" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379505891666" ignored="false" />
+    <file path="/topics.js.coffee" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379571992781" ignored="false" />
     <file path="/application.js" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1378715542755" ignored="false" />
     <file path="/topics.css.scss" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1378712847516" ignored="false" />
     <file path="/edit.html.erb" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1378886028751" ignored="false" />
     <file path="$PROJECT_DIR$/config/environments/production.rb" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1378872415795" ignored="false" />
-    <file path="/application.html.erb" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1378875687982" ignored="false" />
+    <file path="/application.html.erb" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379571667909" ignored="false" />
     <file path="/application.coffee" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379486942418" ignored="false" />
     <file path="/a.rxml" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379478855990" ignored="false" />
     <file path="/a.coffee" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379478859647" ignored="false" />
@@ -26,9 +26,13 @@
     <file path="/a.sql" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379478899748" ignored="false" />
     <file path="/a.xml" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379478901550" ignored="false" />
     <file path="/router.js.coffee" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379487199033" ignored="false" />
-    <file path="/topic.js.coffee" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379503525509" ignored="false" />
+    <file path="/topic.js.coffee" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379588855428" ignored="false" />
     <file path="/topics.html" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379490940587" ignored="false" />
     <file path="/index.erb" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379500485605" ignored="false" />
+    <file path="/topic.html" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379575456604" ignored="false" />
+    <file path="/edit_topic.html" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379589231048" ignored="false" />
+    <file path="/topic_edit.js.coffee" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379586661015" ignored="false" />
+    <file path="/editTopic.js.coffee" changelist="57f20ccf-2b94-479a-8647-1a8131e49e22" time="1379589270840" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="bootstrap.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/lib/bootstrap.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="10" selection-start="262" selection-end="290" vertical-scroll-proportion="-6.875">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,7 +78,7 @@
       <file leaf-file-name="topics.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topics.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="28" selection-start="169" selection-end="169" vertical-scroll-proportion="-4.375">
+            <state line="10" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -83,25 +87,43 @@
       <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="25" selection-start="30" selection-end="30" vertical-scroll-proportion="-0.625">
+            <state line="15" column="27" selection-start="348" selection-end="352" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topics.js.coffee" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit_topic.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/edit_topic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="40" selection-start="386" selection-end="401" vertical-scroll-proportion="-6.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="topics.js.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/topics.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="53" selection-start="631" selection-end="649" vertical-scroll-proportion="0.3646409">
+            <state line="11" column="29" selection-start="504" selection-end="515" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topic.js.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="topic.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/topic.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="24" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
+            <state line="17" column="54" selection-start="577" selection-end="577" vertical-scroll-proportion="0.42713568">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editTopic.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/editTopic.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="13" selection-start="526" selection-end="533" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,22 +139,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/topics/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/lib/text.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/topics.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topic.html" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/routers/router.js.coffee" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/topics_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/index.erb" />
         <option value="$PROJECT_DIR$/app/views/topics/index.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/models/topic.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/topics.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/topic.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topics.html" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/topic.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topics.html" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topic.html" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/topic_edit.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/topics.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/edit_topic.html" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/topic.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/editTopic.js.coffee" />
       </list>
     </option>
   </component>
@@ -147,6 +169,98 @@
     <option name="x" value="-3" />
     <option name="width" value="1926" />
     <option name="height" value="1057" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>ActionScript specificJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>LESS</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Rails</id>
+          </State>
+          <State>
+            <id>Ruby</id>
+          </State>
+          <State>
+            <id>SASS/SCSS</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -174,7 +288,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -484,87 +597,25 @@
               <option name="myItemId" value="backbone" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collections" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.sourceCode.XML" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/javascripts/lib" />
       <recent name="$PROJECT_DIR$/app/views/topics" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts/fancybox" />
     </key>
@@ -689,6 +740,13 @@
       </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
@@ -807,6 +865,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="57f20ccf-2b94-479a-8647-1a8131e49e22" name="Default" comment="" />
@@ -823,10 +898,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26307365" sideWeight="0.6695279" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26627535" sideWeight="0.6695279" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3304721" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3304721" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3304721" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -898,67 +973,76 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/lib/text.js">
+    <entry file="file://$PROJECT_DIR$/app/views/topics/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="3060" selection-end="3060" vertical-scroll-proportion="0.18497758" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/routers/router.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="52" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="25" selection-start="674" selection-end="674" vertical-scroll-proportion="0.48066297">
+        <state line="0" column="57" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+        <state line="7" column="25" selection-start="146" selection-end="146" vertical-scroll-proportion="0.1160221">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/collections/topics.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="132" selection-end="132" vertical-scroll-proportion="0.050962627">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/topics/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/topics/index.erb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/topics/list.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="44" selection-start="98" selection-end="98" vertical-scroll-proportion="-0.29398412">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="15" selection-start="273" selection-end="273" vertical-scroll-proportion="0.17026107">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/lib/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/topic.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="27" selection-start="100" selection-end="100" vertical-scroll-proportion="0.07537688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="348" selection-end="352" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="246" selection-end="246" vertical-scroll-proportion="0.20100503">
           <folding />
         </state>
       </provider>
@@ -970,44 +1054,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topic.html">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/routers/router.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="30" selection-end="30" vertical-scroll-proportion="-0.625">
+        <state line="4" column="29" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/topic.js.coffee">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/edit_topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="100" selection-end="100" vertical-scroll-proportion="0.049723756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/topic.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="262" selection-end="290" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/topics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="169" selection-end="169" vertical-scroll-proportion="-4.375">
+        <state line="11" column="40" selection-start="386" selection-end="401" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/topics.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="53" selection-start="631" selection-end="649" vertical-scroll-proportion="0.3646409">
+        <state line="11" column="29" selection-start="504" selection-end="515" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/editTopic.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="526" selection-end="533" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/topic.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="54" selection-start="577" selection-end="577" vertical-scroll-proportion="0.42713568">
           <folding />
         </state>
       </provider>

@@ -1,12 +1,4 @@
-define [
-    'jquery',
-    'underscore',
-    'backbone',
-    'collections/topics',
-    'text!templates/topics.html',
-    'views/topic',
-    'models/topic',
-  ],
+define ['jquery', 'underscore', 'backbone', 'collections/topics', 'text!templates/topics.html', 'views/topic', 'models/topic'],
   ($, _, Backbone, TopicsCollection, topicsListTemplate, TopicView, TopicModel) ->
     Backbone.View.extend
       el: $("#topics")

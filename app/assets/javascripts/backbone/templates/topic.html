@@ -1,10 +1,20 @@
 <td>
-  <span class="view"></span>
-  <input class="edit" type="text" value=""/>
+  <span class="topic-id"><%= id %></span><br>
 </td>
 <td>
-    <span class="pull-right">
-        <i class="edit-topic icon-edit"></i>
-        <i class="remove-topic icon-trash"></i>
-    </span>
+  <span class="topic-name"><%= text %></span><br>
+</td>
+<td>
+  <span class="topic-created_at"><%= created_at %></span><br>
+</td>
+<td>
+  <span class="topic-updated_at"><%= updated_at %></span><br>
+</td>
+<td>
+  <div class="btn-toolbar">
+    <div class="btn-group">
+      <a class="btn js-edit-topic" href="#"><i class="icon-pencil"></i> Edit topic</a>
+      <a class="btn btn-danger js-remove-topic" href="#"><i class="icon-remove"></i> Delete topic</a>
+    </div>
+  </div>
 </td>
