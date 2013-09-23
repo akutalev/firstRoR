@@ -12,14 +12,16 @@ define ['jquery', 'bootstrap','underscore', 'backbone', 'text!templates/edit_top
     initialize: ->
 
     render: (model) ->
-      (@$el.html(@template(@model.toJSON()))).modal()
+      (@$el.html(@template(@model.toJSON())))
+      @$el.modal('show')
       @
 
     clear: ->
+      @unbind
       @remove
 
     update: ->
       @model.save(text: $(document).find('.js-topic-edit').val())
-      @remove
+      @clear
 
     updateOnEnter: (e) -> @update() if e.keyCode == 13

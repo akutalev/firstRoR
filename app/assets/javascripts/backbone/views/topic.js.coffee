@@ -12,12 +12,13 @@ define ['jquery', 'bootstrap','underscore', 'backbone', 'text!templates/topic.ht
         @listenTo(@model, 'destroy', @remove)
 
       render: ->
-        if @view?
-          @view.remove
         @$el.html(@template(@model.toJSON()))
         @
 
-      clear: -> @model.destroy()
+      clear: ->
+        @view.clear
+        @unbind
+        @model.remove
 
       edit: ->
         @view = new EditTopicView(model: @model)
